@@ -1,11 +1,12 @@
 import { SectionHeading } from "./SectionHeading";
-import { Layout, Server, Database, Wrench } from "lucide-react";
+import { Code2, Layout, Database, LineChart, Wrench } from "lucide-react";
 
 const groups = [
-  { icon: Layout, title: "Frontend", skills: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Tailwind CSS", "Blade"] },
-  { icon: Server, title: "Backend", skills: ["Laravel", "PHP", "Node.js", "REST APIs", "Livewire"] },
-  { icon: Database, title: "Database & Services", skills: ["MySQL", "Resend", "Duitku", "RajaOngkir"] },
-  { icon: Wrench, title: "Tools", skills: ["Git", "GitHub", "VS Code", "Figma", "Postman"] },
+  { icon: Code2, title: "Languages", skills: ["Python", "SQL", "JavaScript", "PHP", "Java"] },
+  { icon: Layout, title: "Web & Frameworks", skills: ["Laravel", "React", "Tailwind CSS", "Blade", "HTML", "CSS"] },
+  { icon: Database, title: "Database", skills: ["MySQL", "PostgreSQL"] },
+  { icon: LineChart, title: "Data & ML", skills: ["Pandas", "NumPy", "scikit-learn"] },
+  { icon: Wrench, title: "Tools", skills: ["Git", "GitHub", "VS Code", "Postman"] },
 ];
 
 export function Skills() {
@@ -14,10 +15,10 @@ export function Skills() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Skills"
-          title={<>My <span className="font-display italic">toolkit</span></>}
-          description="The technologies I reach for when shipping real projects."
+          title={<>What I've been <span className="font-display italic">learning</span></>}
+          description="Tools and topics I picked up across coursework, internship, and personal practice."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {groups.map((g) => (
             <div
               key={g.title}

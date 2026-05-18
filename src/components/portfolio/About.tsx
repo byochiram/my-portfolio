@@ -1,21 +1,21 @@
 import { SectionHeading } from "./SectionHeading";
-import { Palette, Code2, Sparkles } from "lucide-react";
+import { Database, Code2, LineChart } from "lucide-react";
 
 const highlights = [
   {
     icon: Code2,
-    title: "Full-stack mindset",
-    text: "Comfortable across the stack — from polished UI in React & Blade to Laravel APIs and MySQL schemas.",
+    title: "Software Development",
+    text: "Building end-to-end web apps from coursework, internship, and thesis — mostly with Laravel, PHP, and JavaScript.",
   },
   {
-    icon: Palette,
-    title: "Design-aware",
-    text: "I care about typography, spacing, and motion. Interfaces should feel intentional, not assembled.",
+    icon: Database,
+    title: "Database Management",
+    text: "Designing schemas, writing SQL, and keeping data clean — comfortable with MySQL and PostgreSQL.",
   },
   {
-    icon: Sparkles,
-    title: "Ship & iterate",
-    text: "I enjoy taking projects from idea to production — pragmatic decisions, real users, real feedback.",
+    icon: LineChart,
+    title: "Data Science & Programming",
+    text: "Learning data analysis and ML basics with Python — Pandas, NumPy, and scikit-learn.",
   },
 ];
 
@@ -27,16 +27,15 @@ export function About() {
         <div className="grid md:grid-cols-5 gap-10 items-start">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I'm Rosidah — a web developer based in Indonesia who loves
-              building products end-to-end. My recent work focused on a
-              real-world watch auction system, where I touched everything
-              from auth and bidding logic to payment and shipping
-              integrations.
+              I'm Rosidah — a fresh Informatics graduate based in Indonesia.
+              Throughout my studies I worked on a mix of projects: course
+              assignments, a team PPL project, an internship build, and my
+              undergraduate thesis on a watch auction system.
             </p>
             <p>
-              I'm happiest when I can blend craftsmanship with pragmatism:
-              clean code that ships, interfaces that feel right, and
-              features that actually solve a problem.
+              I'm now looking for my first role where I can keep learning
+              while contributing — especially around software development,
+              databases, and data.
             </p>
           </div>
           <div className="md:col-span-3 grid sm:grid-cols-1 gap-4">
