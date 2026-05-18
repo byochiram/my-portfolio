@@ -98,7 +98,7 @@ export function Projects() {
           description="A mix of coursework, an internship, and my undergraduate thesis. Most aren't deployed publicly, so here are previews of how they look."
         />
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => {
             const meta = statusMeta[p.status];
             const StatusIcon = meta.icon;
