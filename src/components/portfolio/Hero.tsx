@@ -27,8 +27,8 @@ export function Hero() {
       />
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
-        <p className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground shadow-card animate-fade-in">
-          <Sparkles className="h-3.5 w-3.5 text-primary" />
+        <p className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-border bg-card/80 backdrop-blur px-4 py-1.5 text-[11px] sm:text-xs font-medium text-muted-foreground shadow-card animate-fade-in">
+          <Sparkles className="h-3.5 w-3.5 text-primary shrink-0" />
           Fresh Graduate · Open to Work · Indonesia
         </p>
 
@@ -43,8 +43,7 @@ export function Hero() {
           style={{ animationDelay: "0.15s" }}
         >
           Interested in software development, database management, data
-          science, and programming — looking for my first opportunity to
-          grow and contribute.
+          science, and programming.
         </p>
 
         <div
@@ -67,7 +66,7 @@ export function Hero() {
         </div>
 
         <div
-          className="mt-10 flex items-center justify-center gap-5 text-muted-foreground animate-fade-up"
+          className="mt-10 mb-12 md:mb-16 flex items-center justify-center gap-5 text-muted-foreground animate-fade-up"
           style={{ animationDelay: "0.45s" }}
         >
           <a href="https://github.com/byochiram" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors" aria-label="GitHub">
@@ -76,7 +75,7 @@ export function Hero() {
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors" aria-label="LinkedIn">
             <Linkedin className="h-5 w-5" />
           </a>
-          <a href="mailto:rosidah.rahmati@example.com" className="hover:text-foreground transition-colors" aria-label="Email">
+          <a href="mailto:rosidahrahmati1@gmail.com" className="hover:text-foreground transition-colors" aria-label="Email">
             <Mail className="h-5 w-5" />
           </a>
         </div>
