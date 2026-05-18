@@ -20,13 +20,16 @@ export function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-md bg-background/70 border-b border-border"
+          ? "backdrop-blur-xl bg-background/75 border-b border-border/70"
           : "bg-transparent"
       }`}
     >
       <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-        <a href="#hero" className="font-semibold tracking-tight text-gradient text-lg">
-          {"<AP/>"}
+        <a href="#hero" className="flex items-center gap-2 font-semibold tracking-tight text-base">
+          <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-primary text-white text-sm font-bold shadow-glow">
+            N
+          </span>
+          <span>Naufal Zufar</span>
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {links.map((l) => (
@@ -42,7 +45,7 @@ export function Navbar() {
         </ul>
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center text-sm px-4 py-2 rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
+          className="hidden md:inline-flex items-center text-sm px-4 py-2 rounded-full bg-foreground text-background hover:opacity-90 transition-opacity"
         >
           Hire me
         </a>
