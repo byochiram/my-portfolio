@@ -29,13 +29,13 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <p className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-border bg-card/80 backdrop-blur px-4 py-1.5 text-[11px] sm:text-xs font-medium text-muted-foreground shadow-card animate-fade-in">
           <Sparkles className="h-3.5 w-3.5 text-primary shrink-0" />
-          Fresh Graduate · Open to Work · Indonesia
+          Informatics Fresh Graduate · Open to Work · Indonesia
         </p>
 
         <h1 className="mt-8 text-5xl md:text-7xl font-bold tracking-tight animate-fade-up">
           Hi, I'm{" "}
           <span className="font-display italic text-gradient">Rosidah</span>
-          <br className="hidden sm:block" /> Informatics fresh graduate.
+          <span className="inline-block animate-wave origin-[70%_70%] ml-2">👋</span>
         </h1>
 
         <p
