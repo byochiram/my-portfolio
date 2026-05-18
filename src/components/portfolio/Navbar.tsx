@@ -25,19 +25,16 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-2 font-semibold tracking-tight text-base">
-          <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-primary text-white text-sm font-bold shadow-glow">
-            N
+        <a href="#hero" className="flex items-center gap-2.5 font-semibold tracking-tight">
+          <span className="relative flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-primary text-white font-display text-lg shadow-glow">
+            R
           </span>
-          <span>Naufal Zufar</span>
+          <span className="hidden sm:inline">Rosidah Rahmati</span>
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {links.map((l) => (
             <li key={l.href}>
-              <a
-                href={l.href}
-                className="hover:text-foreground transition-colors"
-              >
+              <a href={l.href} className="hover:text-foreground transition-colors">
                 {l.label}
               </a>
             </li>
@@ -45,9 +42,9 @@ export function Navbar() {
         </ul>
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center text-sm px-4 py-2 rounded-full bg-foreground text-background hover:opacity-90 transition-opacity"
+          className="inline-flex items-center text-sm px-4 py-2 rounded-full bg-foreground text-background hover:opacity-90 transition-opacity"
         >
-          Hire me
+          Let's talk
         </a>
       </nav>
     </header>
