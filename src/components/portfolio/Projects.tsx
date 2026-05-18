@@ -1,7 +1,8 @@
 import { SectionHeading } from "./SectionHeading";
-import { Github, ExternalLink, Lock, FileText, Info } from "lucide-react";
+import { Github, ExternalLink, Info, MonitorPlay } from "lucide-react";
+import { ProjectPreviewCarousel } from "./ProjectPreviewCarousel";
 
-type Status = "live" | "source" | "private";
+type Status = "live" | "not-deployed";
 
 type Project = {
   title: string;
@@ -10,97 +11,80 @@ type Project = {
   github?: string;
   demo?: string;
   status: Status;
-  reason?: string; // why no live demo
+  reason?: string;
   highlights?: string[];
   year: string;
   role?: string;
+  previews?: string[];
 };
 
 const projects: Project[] = [
   {
     title: "Tempus Auctions",
     description:
-      "A web-based watch auction system built for PT. Tempus Collective Indonesia — covering bidding, winner selection, invoicing, Duitku payment integration, and RajaOngkir shipping.",
+      "Undergraduate thesis — a web-based watch auction system covering bidding, winner selection, invoicing, Duitku payment, and RajaOngkir shipping.",
     tech: ["Laravel", "Blade", "Tailwind CSS", "MySQL", "Resend", "Duitku"],
     github: "https://github.com/byochiram/watch-auction-system",
     demo: "https://auctions.tempuscollective.com",
     status: "live",
     year: "2025",
-    role: "Full-stack Developer · Undergraduate Thesis",
+    role: "Thesis · Full-stack Developer",
     highlights: [
       "Real-time highest bid + countdown",
       "Auto auction closing via Laravel Scheduler",
-      "Admin dashboard for products, lots, bids & shipments",
+      "Admin dashboard for products, lots, bids, and shipments",
     ],
+    previews: [],
   },
   {
-    title: "Campus Internship Portal",
+    title: "SIGMA — PPL Project",
     description:
-      "Internal portal for managing student internships — application flow, supervisor matching, and progress reports. Runs only inside the campus network so a public demo isn't available.",
-    tech: ["Laravel", "Livewire", "Tailwind CSS", "MySQL"],
+      "Team project for the Software Engineering (PPL) course in semester 5. Built collaboratively with classmates as a coursework deliverable.",
+    tech: ["Laravel", "PHP", "Tailwind CSS", "MySQL"],
     github: "https://github.com/byochiram",
-    status: "private",
-    reason: "Deployed on a private campus server",
+    status: "not-deployed",
+    reason: "Coursework project — runs locally, not deployed",
     year: "2024",
-    role: "Backend Developer",
+    role: "PPL Team Project · Semester 5",
     highlights: [
-      "Role-based access for students, lecturers & admins",
-      "PDF report generation",
-      "Email notifications for status updates",
+      "Built in a team following SDLC stages",
+      "Role-based access and CRUD modules",
+      "Documented requirements, design, and testing",
     ],
+    previews: [],
   },
   {
-    title: "POS & Inventory App",
+    title: "Internship Project (PKL)",
     description:
-      "A point-of-sale and inventory tool for a small retail business. Built as a local desktop-style web app — not deployed publicly to keep client data private.",
-    tech: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+      "Web application built during my internship to support internal operations. Hosted on a local/internal environment so a public demo isn't available.",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
     github: "https://github.com/byochiram",
-    status: "source",
-    reason: "Client project — source available, demo on request",
+    status: "not-deployed",
+    reason: "Internship project — internal use only",
     year: "2024",
-    role: "Solo Developer",
+    role: "Internship · Developer",
     highlights: [
-      "Daily/weekly/monthly sales reports",
-      "Stock alerts & barcode lookup",
-      "Multi-cashier accounts",
+      "Contributed to feature development end-to-end",
+      "Worked with real stakeholder feedback",
+      "Practiced Git-based team workflow",
     ],
-  },
-  {
-    title: "Personal Blog Engine",
-    description:
-      "A minimal Markdown-powered blog used as a sandbox for trying new patterns. Currently running locally while content is being prepared for launch.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "MDX"],
-    github: "https://github.com/byochiram",
-    status: "source",
-    reason: "Work in progress — not yet deployed",
-    year: "2025",
-    role: "Solo",
-    highlights: [
-      "MDX with syntax highlighting",
-      "Reading time + tag system",
-      "Light/dark theme",
-    ],
+    previews: [],
   },
 ];
 
 const statusMeta: Record<
   Status,
-  { label: string; className: string; icon: typeof Lock }
+  { label: string; className: string; icon: typeof ExternalLink }
 > = {
   live: {
     label: "Live Demo",
     className: "bg-secondary/15 text-secondary border-secondary/30",
     icon: ExternalLink,
   },
-  source: {
-    label: "Source Available",
-    className: "bg-primary/10 text-primary border-primary/25",
-    icon: FileText,
-  },
-  private: {
-    label: "Private Deployment",
+  "not-deployed": {
+    label: "Not Deployed · Preview Only",
     className: "bg-foreground/5 text-foreground/70 border-foreground/15",
-    icon: Lock,
+    icon: MonitorPlay,
   },
 };
 
@@ -110,8 +94,8 @@ export function Projects() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Projects"
-          title={<>Selected <span className="font-display italic">work</span></>}
-          description="A mix of client, academic, and personal projects. Some live on the web, others live behind closed doors — each one taught me something."
+          title={<>Things I built during <span className="font-display italic">college</span></>}
+          description="A mix of coursework, an internship, and my undergraduate thesis. Most aren't deployed publicly, so here are previews of how they look."
         />
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -125,15 +109,19 @@ export function Projects() {
               >
                 <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                {/* header: status + year */}
+                <ProjectPreviewCarousel
+                  images={p.previews ?? []}
+                  title={p.title}
+                />
+
                 <div className="flex items-center justify-between gap-3 text-xs">
                   <span
-                    className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 font-medium ${meta.className}`}
+                    className={`mt-5 inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 font-medium ${meta.className}`}
                   >
                     <StatusIcon className="h-3.5 w-3.5" />
                     {meta.label}
                   </span>
-                  <span className="text-muted-foreground">{p.year}</span>
+                  <span className="mt-5 text-muted-foreground">{p.year}</span>
                 </div>
 
                 <h3 className="mt-4 text-xl font-semibold tracking-tight">
@@ -188,10 +176,10 @@ export function Projects() {
                       className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-xs font-semibold hover:border-primary hover:text-primary transition-colors"
                     >
                       <Github className="h-4 w-4" />
-                      Source
+                      View on GitHub
                     </a>
                   ) : null}
-                  {p.demo ? (
+                  {p.status === "live" && p.demo ? (
                     <a
                       href={p.demo}
                       target="_blank"
@@ -201,14 +189,7 @@ export function Projects() {
                       Visit live
                       <ExternalLink className="h-3.5 w-3.5" />
                     </a>
-                  ) : (
-                    <a
-                      href="#contact"
-                      className="inline-flex items-center gap-2 rounded-full bg-foreground/5 px-4 py-2 text-xs font-semibold text-foreground/80 hover:bg-foreground/10 transition-colors"
-                    >
-                      Request a walkthrough
-                    </a>
-                  )}
+                  ) : null}
                 </div>
               </article>
             );
@@ -216,9 +197,9 @@ export function Projects() {
         </div>
 
         <p className="mt-10 text-center text-sm text-muted-foreground">
-          Want a deeper look at a project that isn't deployed?{" "}
+          Want a walkthrough of any project?{" "}
           <a href="#contact" className="text-primary font-medium hover:underline">
-            Ask for a private demo
+            Reach out
           </a>
           .
         </p>
