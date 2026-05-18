@@ -2,9 +2,9 @@ import { SectionHeading } from "./SectionHeading";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 const channels = [
-  { icon: Mail, label: "Email", value: "rosidahrahmati1@gmail.com", href: "mailto:rosidahrahmati1@gmail.com" },
   { icon: Github, label: "GitHub", value: "@byochiram", href: "https://github.com/byochiram" },
   { icon: Linkedin, label: "LinkedIn", value: "Rosidah Rahmati", href: "https://linkedin.com" },
+  { icon: Mail, label: "Email", value: "rosidahrahmati1@gmail.com", href: "mailto:rosidahrahmati1@gmail.com" },
 ];
 
 export function Contact() {

@@ -29,7 +29,7 @@ export function Navbar() {
           <span className="relative flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-primary text-white font-display text-lg shadow-glow">
             R
           </span>
-          <span className="hidden sm:inline">Rosidah Rahmati</span>
+          <span className="hidden sm:inline">RosiSpace</span>
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {links.map((l) => (
