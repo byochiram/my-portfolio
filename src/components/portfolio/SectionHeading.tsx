@@ -1,15 +1,17 @@
+import type { ReactNode } from "react";
+
 export function SectionHeading({
   eyebrow,
   title,
   description,
 }: {
   eyebrow: string;
-  title: string;
+  title: ReactNode;
   description?: string;
 }) {
   return (
     <div className="mx-auto max-w-2xl text-center mb-14">
-      <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">
+      <p className="text-xs uppercase tracking-[0.25em] text-primary font-semibold">
         {eyebrow}
       </p>
       <h2 className="mt-3 text-3xl md:text-5xl font-bold tracking-tight">
