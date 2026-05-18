@@ -29,21 +29,22 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <p className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 backdrop-blur px-4 py-1.5 text-xs font-medium text-muted-foreground shadow-card animate-fade-in">
           <Sparkles className="h-3.5 w-3.5 text-primary" />
-          Open for new opportunities · Indonesia
+          Fresh Graduate · Open to Work · Indonesia
         </p>
 
         <h1 className="mt-8 text-5xl md:text-7xl font-bold tracking-tight animate-fade-up">
           Hi, I'm{" "}
           <span className="font-display italic text-gradient">Rosidah</span>
-          <br className="hidden sm:block" /> I build things for the web.
+          <br className="hidden sm:block" /> Informatics fresh graduate.
         </h1>
 
         <p
           className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up"
           style={{ animationDelay: "0.15s" }}
         >
-          A web developer who blends thoughtful design with reliable code —
-          turning ideas into delightful, end-to-end digital products.
+          Interested in software development, database management, data
+          science, and programming — looking for my first opportunity to
+          grow and contribute.
         </p>
 
         <div
@@ -54,7 +55,7 @@ export function Hero() {
             href="#projects"
             className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:-translate-y-0.5"
           >
-            See my work
+            See my projects
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
