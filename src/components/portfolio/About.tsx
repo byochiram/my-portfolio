@@ -3,19 +3,19 @@ import { GraduationCap, Code2, Lightbulb } from "lucide-react";
 
 const highlights = [
   {
-    icon: GraduationCap,
-    title: "Informatics Student",
-    text: "Currently pursuing a Bachelor's in Informatics with a focus on software engineering and web technologies.",
+    icon: Code2,
+    title: "Front-End Focused",
+    text: "Specialized in React, Next.js, and TypeScript — building responsive interfaces with pixel-perfect detail.",
   },
   {
-    icon: Code2,
-    title: "Web Developer",
-    text: "I love turning ideas into accessible, performant web experiences using modern frontend and backend tools.",
+    icon: GraduationCap,
+    title: "Always Learning",
+    text: "Constantly exploring new tools, patterns, and best practices to write cleaner and more scalable code.",
   },
   {
     icon: Lightbulb,
-    title: "Problem Solver",
-    text: "Driven by curiosity — I learn quickly, ask the right questions, and ship working solutions.",
+    title: "Design-minded",
+    text: "I care about UX, typography, motion, and the small details that make a product feel premium.",
   },
 ];
 
@@ -27,23 +27,23 @@ export function About() {
         <div className="grid md:grid-cols-5 gap-10 items-start">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              I'm an Informatics undergraduate passionate about building
-              software that solves real problems. My journey started with
-              curiosity about how websites work — and quickly turned into a
-              love for crafting clean, user-friendly interfaces backed by
-              solid logic.
+              I'm Naufal — a Front-End Developer who enjoys turning complex
+              ideas into simple, polished interfaces. I care deeply about
+              clean code, smooth interactions, and experiences that feel
+              effortless on every screen.
             </p>
             <p>
-              I'm now sharpening my skills as a Junior Web Developer:
-              writing maintainable code, learning from open source, and
-              shipping projects that go beyond the classroom.
+              I work with modern tools like React, Next.js, TypeScript and
+              Tailwind CSS — collaborating closely with designers and
+              backend teams to ship products that look great and perform
+              even better.
             </p>
           </div>
           <div className="md:col-span-3 grid sm:grid-cols-1 gap-4">
             {highlights.map((h) => (
               <div
                 key={h.title}
-                className="group rounded-2xl border border-border bg-gradient-card p-6 shadow-card hover:border-primary/50 hover:-translate-y-1 transition-all duration-300"
+                className="group rounded-3xl border border-border bg-card p-6 shadow-card hover:border-primary/40 hover:-translate-y-1 hover:shadow-glow transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">

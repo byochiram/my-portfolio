@@ -8,34 +8,34 @@ export function Hero() {
     >
       <div
         aria-hidden
-        className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-primary/20 blur-3xl animate-float"
+        className="absolute -top-32 -left-24 h-80 w-80 rounded-full bg-primary/15 blur-3xl animate-float"
       />
       <div
         aria-hidden
-        className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-accent/20 blur-3xl animate-float"
+        className="absolute bottom-0 right-0 h-[28rem] w-[28rem] rounded-full bg-secondary/15 blur-3xl animate-float"
         style={{ animationDelay: "2s" }}
       />
 
       <div className="relative mx-auto max-w-4xl px-6 text-center">
-        <p className="inline-flex items-center gap-2 rounded-full border border-border bg-card/50 backdrop-blur px-4 py-1.5 text-xs text-muted-foreground animate-fade-in">
+        <p className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 backdrop-blur px-4 py-1.5 text-xs text-muted-foreground shadow-card animate-fade-in">
           <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-          Available for internships & junior roles
+          Available for new opportunities
         </p>
 
         <h1 className="mt-8 text-5xl md:text-7xl font-bold tracking-tight animate-fade-up">
-          Hi, I'm <span className="text-gradient">Alex Pratama</span>
+          Hi, I'm <span className="text-gradient">Naufal Zufar</span>
         </h1>
         <p
           className="mt-6 text-lg md:text-xl text-muted-foreground animate-fade-up"
           style={{ animationDelay: "0.15s" }}
         >
-          Informatics Undergraduate · Junior Web Developer
+          Front-End Developer crafting clean, modern web experiences.
         </p>
         <p
-          className="mt-4 text-base md:text-lg text-muted-foreground/80 max-w-2xl mx-auto animate-fade-up"
+          className="mt-4 text-base md:text-lg text-muted-foreground/90 max-w-2xl mx-auto animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          Building real-world solutions through code.
+          I design and build delightful interfaces with React, TypeScript, and Tailwind — focused on performance, accessibility, and detail.
         </p>
 
         <div
@@ -44,14 +44,14 @@ export function Hero() {
         >
           <a
             href="#projects"
-            className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:-translate-y-0.5"
+            className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition-all hover:-translate-y-0.5 hover:shadow-[0_25px_60px_-20px_oklch(0.55_0.22_277/0.5)]"
           >
             View Projects
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold hover:border-primary hover:text-primary transition-colors"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold shadow-card hover:border-primary hover:text-primary transition-colors"
           >
             Get in touch
           </a>
@@ -61,13 +61,13 @@ export function Hero() {
           className="mt-10 flex items-center justify-center gap-5 text-muted-foreground animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
-          <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors" aria-label="GitHub">
+          <a href="https://github.com/naufalzufar" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors" aria-label="GitHub">
             <Github className="h-5 w-5" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/naufalzufar" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors" aria-label="LinkedIn">
             <Linkedin className="h-5 w-5" />
           </a>
-          <a href="mailto:hello@example.com" className="hover:text-foreground transition-colors" aria-label="Email">
+          <a href="mailto:naufal.zufar@example.com" className="hover:text-foreground transition-colors" aria-label="Email">
             <Mail className="h-5 w-5" />
           </a>
         </div>
