@@ -3,53 +3,53 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Library Management System",
+    title: "Linear-style SaaS Landing",
     description:
-      "A web app to manage books, members and borrowing flows with role-based authentication and full CRUD.",
-    tech: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
-    github: "https://github.com",
-    demo: "",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A lightweight to-do app with drag & drop, filters and persistent state using local storage — no backend required.",
-    tech: ["JavaScript", "HTML", "CSS", "LocalStorage"],
+      "A modern landing page for a SaaS product with smooth scroll animations, responsive layout, and a clean component system.",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
     github: "https://github.com",
     demo: "https://example.com",
   },
   {
-    title: "Company Profile Website",
+    title: "Analytics Dashboard UI",
     description:
-      "A fully responsive marketing site for a local business, built mobile-first with smooth scroll animations.",
-    tech: ["HTML", "CSS", "JavaScript", "GSAP"],
+      "A polished dashboard with charts, filters and a dark/light theme — built with reusable, accessible React components.",
+    tech: ["React", "TypeScript", "Tailwind", "Recharts"],
     github: "https://github.com",
     demo: "https://example.com",
   },
   {
-    title: "Data Analysis Project",
+    title: "E-commerce Storefront",
     description:
-      "Exploratory analysis of public datasets with cleaning, statistics and clear interactive visualizations.",
-    tech: ["Python", "Pandas", "Matplotlib", "Jupyter"],
+      "A mobile-first storefront with cart, product detail pages, and seamless checkout flow — optimized for performance.",
+    tech: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
     github: "https://github.com",
-    demo: "",
+    demo: "https://example.com",
+  },
+  {
+    title: "Personal Blog Platform",
+    description:
+      "A minimal MDX-powered blog with reading time, syntax highlighting, and a smooth, content-first reading experience.",
+    tech: ["Next.js", "MDX", "Tailwind", "Vercel"],
+    github: "https://github.com",
+    demo: "https://example.com",
   },
 ];
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-32 bg-card/30">
+    <section id="projects" className="py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Projects"
-          title="Things I've built"
-          description="A selection of academic and personal projects that taught me how to ship."
+          title="Selected work"
+          description="A handful of projects I've built — focused on UI craft, performance, and developer experience."
         />
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((p) => (
             <article
               key={p.title}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-card p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-glow"
+              className="group relative overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-glow"
             >
               <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="flex items-start justify-between gap-4">
@@ -68,7 +68,7 @@ export function Projects() {
               <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{p.description}</p>
               <ul className="mt-5 flex flex-wrap gap-2">
                 {p.tech.map((t) => (
-                  <li key={t} className="rounded-full border border-border bg-background/40 px-3 py-1 text-xs text-muted-foreground">
+                  <li key={t} className="rounded-full border border-border bg-muted px-3 py-1 text-xs text-muted-foreground">
                     {t}
                   </li>
                 ))}
