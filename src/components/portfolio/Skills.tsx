@@ -1,22 +1,21 @@
 const skills = [
   "Laravel",
   "PHP",
-  "Blade",
   "MySQL",
   "JavaScript",
+  "TypeScript",
+  "React",
   "HTML",
   "CSS",
-  "Bootstrap",
   "Tailwind CSS",
+  "Bootstrap",
   "Figma",
   "Python",
   "SQL",
   "Database Design",
-  "REST API",
+  "API Integration",
   "Git",
   "GitHub",
-  "VS Code",
-  "Postman",
 ];
 
 export function Skills() {
