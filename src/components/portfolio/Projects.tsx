@@ -30,14 +30,14 @@ const projects: Project[] = [
     subtitle: "Thesis Project",
     organization: "PT. Tempus Collective Indonesia",
     description:
-      "A web-based watch auction platform built to support auction listing, bidding flow, transaction management, and admin operations.",
-    role: "Developer",
+      "A web-based watch auction platform developed as an undergraduate thesis project for PT. Tempus Collective Indonesia.",
+    role: "Sole Developer",
     status: "live",
-    tech: ["Laravel", "PHP", "Blade", "Tailwind CSS", "MySQL"],
+    tech: ["Laravel", "PHP", "Blade", "Tailwind CSS", "JavaScript", "MySQL"],
     highlights: [
-      "Built auction flow for watch listings and bidding process",
-      "Designed database structure for auction and transaction data",
-      "Implemented admin features to manage auction activities",
+      "Built auction catalog, bidding flow, and winner selection",
+      "Implemented invoice, payment, shipping, and email notification flow",
+      "Developed admin dashboard for managing auctions, users, bids, and transactions",
     ],
     previews: [
       "/projects/tempus/preview-1.webp",
@@ -46,26 +46,23 @@ const projects: Project[] = [
       "/projects/tempus/preview-4.webp",
       "/projects/tempus/preview-5.webp",
       "/projects/tempus/preview-6.webp",
-      "/projects/tempus/preview-7.webp",
-      "/projects/tempus/preview-8.webp",
-      "/projects/tempus/preview-9.webp",
     ],
     github: "https://github.com/byochiram/watch-auction-system",
     demo: "https://auctions.tempuscollective.com/",
   },
   {
     title: "SIGMA",
-    subtitle: "Software Engineering Course Project",
+    subtitle: "Course Project",
     organization: "Group Project",
     description:
-      "A course registration system built for a Software Engineering course project, designed to support course selection and approval workflow.",
-    role: "Team Project Contributor",
+      "A web-based course registration system developed for a Software Engineering course project, focused on the university course plan approval process.",
+    role: "Academic Advisor Role Developer",
     status: "live",
-    tech: ["Laravel", "PHP", "Blade", "Bootstrap", "MySQL"],
+    tech: ["Laravel", "PHP", "Blade", "Tailwind CSS", "Bootstrap", "MySQL"],
     highlights: [
-      "Worked on a group-based software development project",
-      "Built role-based workflow for course registration process",
-      "Implemented system features based on academic process requirements",
+      "Developed Academic Advisor features for reviewing student course plans",
+      "Implemented IRS approval, change permission, and cancellation permission flow",
+      "Built advised-student list, recap, IRS history, filtering, and print functionality",
     ],
     previews: [
       "/projects/sigma/preview-1.webp",
@@ -74,35 +71,31 @@ const projects: Project[] = [
       "/projects/sigma/preview-4.webp",
       "/projects/sigma/preview-5.webp",
       "/projects/sigma/preview-6.webp",
-      "/projects/sigma/preview-7.webp",
-      "/projects/sigma/preview-8.webp",
-      "/projects/sigma/preview-9.webp",
-      "/projects/sigma/preview-10.webp",
     ],
     github: "https://github.com/byochiram/SigmaPPL",
     demo: "https://sigmappl-production.up.railway.app/",
   },
   {
-  title: "SIPP",
-  subtitle: "Internship Project",
-  organization: "BPSDMD Jawa Tengah",
-  description:
-    "An internal training registration system for Aparatur Sipil Negara (ASN), developed during internship to support participant registration and training data management.",
-  role: "Intern Developer",
-  status: "internal",
-  tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-  highlights: [
-    "Built registration features for ASN training activities",
-    "Worked with database-driven forms and administrative data",
-    "Developed features based on real organizational needs",
-  ],
-  previews: [
-    "/projects/sipp/preview-1.webp",
-    "/projects/sipp/preview-2.webp",
-    "/projects/sipp/preview-3.webp",
-    "/projects/sipp/preview-4.webp",
-  ],
-},
+    title: "SIPP",
+    subtitle: "Internship Project",
+    organization: "BPSDMD Jawa Tengah",
+    description:
+      "An internal admin-side training registration system for Aparatur Sipil Negara (ASN) across Central Java, developed during internship at BPSDMD Jawa Tengah.",
+    role: "Intern Developer",
+    status: "internal",
+    tech: ["Laravel", "PHP", "Blade", "MySQL", "Bootstrap"],
+    highlights: [
+      "Built features for training registration and participant data management",
+      "Supported admin-side training workflows from registration to completion",
+      "Worked on an internal system based on real organizational requirements",
+    ],
+    previews: [
+      "/projects/sipp/preview-1.webp",
+      "/projects/sipp/preview-2.webp",
+      "/projects/sipp/preview-3.webp",
+      "/projects/sipp/preview-4.webp",
+    ],
+  },
 ];
 
 const statusMeta: Record<
@@ -132,7 +125,7 @@ export function Projects() {
               Selected <span className="font-display italic">projects</span>
             </>
           }
-          description="A collection of web-based systems built through thesis development, coursework, and internship experience."
+          description="A collection of web-based systems built through thesis, coursework, and internship experience. Each project preview shows selected screens only."
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

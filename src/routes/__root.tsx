@@ -72,7 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Rosidah Rahmati — Informatics Fresh Graduate Portfolio" },
+      { title: "Rosidah Rahmati | Portfolio" },
       { name: "description", content: "Portfolio of Rosidah Rahmati — Informatics fresh graduate interested in software development, database management, and data science." },
       { name: "author", content: "Rosidah Rahmati" },
       { property: "og:title", content: "Rosidah Rahmati — Informatics Fresh Graduate" },
@@ -86,6 +86,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "icon", type:"image/svg+xml", href:"/favicon.svg" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" },

@@ -57,9 +57,9 @@ export function About() {
           {/* Photo */}
           <div className="md:col-span-5">
             <div className="relative mx-auto max-w-[260px] md:max-w-[310px]">
-              <div className="absolute -inset-5 rounded-[2.5rem] bg-primary/10 blur-3xl" />
+              <div className="pointer-events-none absolute -inset-5 rounded-[2.5rem] bg-primary/10 blur-3xl" />
 
-              <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card p-3 shadow-card">
+              <div className="relative z-10 overflow-hidden rounded-[2rem] border border-border bg-card p-3 shadow-card">
                 <img
                   src="/images/rosidah.png"
                   alt="Rosidah Rahmati"
@@ -67,8 +67,7 @@ export function About() {
                 />
               </div>
 
-              {/* Desktop CTA: tampil di bawah foto */}
-              <AboutCta className="mt-6 hidden justify-center md:flex" />
+              <AboutCta className="relative z-10 mt-6 hidden justify-center md:flex" />
             </div>
           </div>
 
