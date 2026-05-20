@@ -46,6 +46,9 @@ const projects: Project[] = [
       "/projects/tempus/preview-4.webp",
       "/projects/tempus/preview-5.webp",
       "/projects/tempus/preview-6.webp",
+      "/projects/tempus/preview-7.webp",
+      "/projects/tempus/preview-8.webp",
+      "/projects/tempus/preview-9.webp",
     ],
     github: "https://github.com/byochiram/watch-auction-system",
     demo: "https://auctions.tempuscollective.com/",
@@ -71,6 +74,10 @@ const projects: Project[] = [
       "/projects/sigma/preview-4.webp",
       "/projects/sigma/preview-5.webp",
       "/projects/sigma/preview-6.webp",
+      "/projects/sigma/preview-7.webp",
+      "/projects/sigma/preview-8.webp",
+      "/projects/sigma/preview-9.webp",
+      "/projects/sigma/preview-10.webp",
     ],
     github: "https://github.com/byochiram/SigmaPPL",
     demo: "https://sigmappl-production.up.railway.app/",
@@ -146,17 +153,17 @@ export function Projects() {
                 />
 
                 <div className="mt-5 flex items-start justify-between gap-3 text-xs">
-  <span
-    className={`inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 py-1 font-medium ${meta.className}`}
-  >
-    <StatusIcon className="h-3.5 w-3.5 shrink-0" />
-    {meta.label}
-  </span>
+                  <span
+                    className={`inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 py-1 font-medium ${meta.className}`}
+                  >
+                    <StatusIcon className="h-3.5 w-3.5 shrink-0" />
+                    {meta.label}
+                  </span>
 
-  <span className="min-w-0 text-right leading-snug text-muted-foreground">
-    {project.subtitle}
-  </span>
-</div>
+                  <span className="min-w-0 text-right leading-snug text-muted-foreground">
+                    {project.subtitle}
+                  </span>
+                </div>
 
                 <div className="mt-4">
                   <h3 className="text-xl font-semibold tracking-tight text-foreground">
