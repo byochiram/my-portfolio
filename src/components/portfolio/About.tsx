@@ -11,7 +11,7 @@ const facts = [
     icon: GraduationCap,
     label: "Education",
     value: "Informatics, Diponegoro University",
-    meta: "2022 — 2026",
+    meta: "Aug 2022 — Mar 2026",
   },
   {
     icon: Award,
@@ -34,7 +34,7 @@ function AboutCta({ className = "" }: { className?: string }) {
   return (
     <div className={`flex flex-wrap items-center gap-3 ${className}`}>
       <a
-        href="/cv/rosidah-rahmati-cv.pdf"
+        href="/cv/CV_Rosidah Rahmati.pdf"
         target="_blank"
         rel="noreferrer"
         className="group inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-2.5 text-sm font-semibold text-background transition-all hover:-translate-y-0.5 hover:opacity-90"
@@ -102,8 +102,7 @@ export function About() {
               </p>
 
               <p>
-                I’m open to entry-level opportunities across the IT field,
-                especially in software development, cloud technology, and data.
+                I’m interested in entry-level technology roles where I can contribute to software development, cloud implementation, and data-related projects.
               </p>
             </div>
 

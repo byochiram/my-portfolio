@@ -33,28 +33,28 @@ export function Hero() {
         </p>
 
         <h1 className="mt-8 text-[clamp(2.5rem,10vw,4.75rem)] font-bold tracking-tight animate-fade-up">
-  <span className="block sm:inline">Hi, I'm </span>
-  <span className="inline-flex items-center whitespace-nowrap">
-    <span className="font-display italic text-gradient">Rosidah</span>
-    <span className="inline-block animate-wave origin-[70%_70%] ml-2 text-[0.85em]">
-      👋
-    </span>
-  </span>
-</h1>
+          <span className="block sm:inline">Hi, I'm </span>
+          <span className="inline-flex items-center whitespace-nowrap">
+            <span className="font-display italic text-gradient">Rosidah</span>
+            <span className="inline-block animate-wave origin-[70%_70%] ml-2 text-[0.85em]">
+              👋
+            </span>
+          </span>
+        </h1>
 
-<p
-  className="mt-4 text-xl md:text-2xl font-semibold text-foreground animate-fade-up"
-  style={{ animationDelay: "0.1s" }}
->
-  Exploring Software, Cloud & Data
-</p>
+        <p
+          className="mt-4 text-xl md:text-2xl font-semibold text-foreground animate-fade-up"
+          style={{ animationDelay: "0.1s" }}
+        >
+          Software, Cloud & Data Enthusiast
+        </p>
 
-<p
-  className="mt-5 text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-up"
-  style={{ animationDelay: "0.15s" }}
->
-  I enjoy building useful web applications, learning cloud technologies, and exploring how data can support better digital solutions.
-</p>
+        <p
+          className="mt-5 text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-up"
+          style={{ animationDelay: "0.15s" }}
+        >
+          I enjoy building practical software projects, learning cloud technologies, and exploring how data can support better digital solutions.
+        </p>
 
         <div
           className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-fade-up"
@@ -68,13 +68,13 @@ export function Hero() {
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-  href="/cv/rosidah-rahmati-cv.pdf"
-  target="_blank"
-  rel="noreferrer"
-  className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold shadow-card hover:border-primary hover:text-primary transition-colors"
->
-  View My CV
-</a>
+            href="/cv/CV_Rosidah Rahmati.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold shadow-card hover:border-primary hover:text-primary transition-colors"
+          >
+            View My CV
+          </a>
         </div>
 
         <div

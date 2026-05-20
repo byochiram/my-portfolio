@@ -30,14 +30,15 @@ const projects: Project[] = [
     subtitle: "Thesis Project",
     organization: "PT. Tempus Collective Indonesia",
     description:
-      "A web-based watch auction platform developed as an undergraduate thesis project for PT. Tempus Collective Indonesia.",
-    role: "Sole Developer",
+      "A web-based auction platform built as an undergraduate thesis project to extend Tempus Collective’s fixed-price sales model into an online bidding system.",
+    role: "Full Stack Developer",
     status: "live",
     tech: ["Laravel", "PHP", "Blade", "Tailwind CSS", "JavaScript", "MySQL"],
     highlights: [
-      "Built auction catalog, bidding flow, and winner selection",
-      "Implemented invoice, payment, shipping, and email notification flow",
-      "Developed admin dashboard for managing auctions, users, bids, and transactions",
+      "Built an end-to-end auction flow from catalog browsing to winner transaction",
+      "Delivered workflows across 4 roles: Guest, Bidder, Admin, and Superadmin",
+      "Engineered anti-sniping logic, bid validation, email verification, checkout, shipping cost calculation, and winner transactions",
+      "Validated 17 use cases through 161 black-box test scenarios",
     ],
     previews: [
       "/projects/tempus/preview-1.webp",
@@ -54,18 +55,19 @@ const projects: Project[] = [
     demo: "https://auctions.tempuscollective.com/",
   },
   {
-    title: "SIGMA",
+    title: "SiGMA",
     subtitle: "Course Project",
     organization: "Group Project",
     description:
-      "A web-based course registration system developed for a Software Engineering course project, focused on the university course plan approval process.",
+      "An academic capstone project simulating a university semester study plan registration system, focused on academic advisor approval workflows.",
     role: "Academic Advisor Role Developer",
     status: "live",
     tech: ["Laravel", "PHP", "Blade", "Tailwind CSS", "Bootstrap", "MySQL"],
     highlights: [
-      "Developed Academic Advisor features for reviewing student course plans",
-      "Implemented IRS approval, change permission, and cancellation permission flow",
-      "Built advised-student list, recap, IRS history, filtering, and print functionality",
+      "Built the Academic Advisor module for reviewing student study plan submissions",
+      "Delivered 4 core workflows: IRS approval, revision permission, cancellation permission, and student recap",
+      "Implemented filtering, status tracking, bulk approval, validation rules, and PDF printing",
+      "Validated 8 functional workflows and won 1st place in the Software Project course Capstone",
     ],
     previews: [
       "/projects/sigma/preview-1.webp",
@@ -78,6 +80,7 @@ const projects: Project[] = [
       "/projects/sigma/preview-8.webp",
       "/projects/sigma/preview-9.webp",
       "/projects/sigma/preview-10.webp",
+      "/projects/sigma/preview-11.webp",
     ],
     github: "https://github.com/byochiram/SigmaPPL",
     demo: "https://sigmappl-production.up.railway.app/",
@@ -87,14 +90,15 @@ const projects: Project[] = [
     subtitle: "Internship Project",
     organization: "BPSDMD Jawa Tengah",
     description:
-      "An internal admin-side training registration system for Aparatur Sipil Negara (ASN) across Central Java, developed during internship at BPSDMD Jawa Tengah.",
+      "An internal admin-side training registration system for Civil Servants (ASN) across Central Java, developed during internship at BPSDMD Jawa Tengah.",
     role: "Intern Developer",
     status: "internal",
     tech: ["Laravel", "PHP", "Blade", "MySQL", "Bootstrap"],
     highlights: [
-      "Built features for training registration and participant data management",
-      "Supported admin-side training workflows from registration to completion",
-      "Worked on an internal system based on real organizational requirements",
+      "Rebuilt a legacy native PHP workflow into a structured admin-side system",
+      "Delivered 28 use cases across training management, participant validation, certificates, dashboard analytics, and user management",
+      "Integrated MANTRA API to automate ASN identity validation and reduce manual participant data entry",
+      "Designed 3 core database tables and executed 144 black-box test scenarios before handover",
     ],
     previews: [
       "/projects/sipp/preview-1.webp",

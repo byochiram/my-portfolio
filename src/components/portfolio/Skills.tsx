@@ -3,19 +3,29 @@ const skills = [
   "PHP",
   "MySQL",
   "JavaScript",
-  "TypeScript",
-  "React",
+  "REST APIs",
+  "Blade",
   "HTML",
   "CSS",
   "Tailwind CSS",
   "Bootstrap",
+  "Git",
+  "GitHub",
+  "Postman",
   "Figma",
+  "Oracle Cloud",
+  "Nginx",
   "Python",
+  "Pandas",
+  "Scikit-learn",
+  "Streamlit",
   "SQL",
   "Database Design",
   "API Integration",
-  "Git",
-  "GitHub",
+  "Data Preprocessing",
+  "Data Visualization",
+  "TypeScript",
+  "React",
 ];
 
 export function Skills() {
@@ -41,11 +51,6 @@ export function Skills() {
             </span>
           ))}
         </div>
-
-        <p className="mx-auto mt-8 max-w-xl text-sm leading-relaxed text-muted-foreground">
-          Also familiar with Google Colab for Python-based coursework and
-          currently exploring cloud technology and data-related fields.
-        </p>
       </div>
     </section>
   );
